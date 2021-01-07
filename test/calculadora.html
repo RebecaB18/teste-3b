@@ -1,0 +1,90 @@
+<html>
+<body>
+    <html>
+        <head>
+           
+         <style>
+            p{
+               text-align: center;
+               border-style:double;
+               margin-top: 1cm;
+               border-top:greenyellow;
+
+            }
+            h1{
+               background-color: green;
+               text-align: center ;
+               border: honeydew ;
+            }
+            body{
+               background-color: honeydew;
+
+            }
+
+     </style><body>
+                     <h1>CALCULADORA </h1>
+                      <p>
+                         <input id="r" size="15" type="text" size="5"> </input>
+                         <input id="s" size="15" type="text" size="5"> </input>
+                         <br>
+                         <br>
+                         <button onclick="soma()"> click para somar</button>
+                         <button onclick="mult()"> click para multiplicar</button>
+                         <button onclick="sub()"> click para subtrair</button>
+                         <button onclick="div()"> click para dividir</button>
+                         </p>
+                      </body>
+                         
+                      </p>
+
+            <script>
+                function soma (){
+                
+                   let inputr= document.getElementById("r");
+                    let inputs= document.getElementById("s");
+                    let inputy= document.getElementById("y");
+                    let vr= parseInt(inputr.value);
+                    let vs= parseInt(inputs.value);
+                    
+                    let vy=vr+vs;
+                    alert (" soma equivalente: " +vy);
+                 }
+                     
+                     function multi() {
+                        let inputr= document.getElementById("r");
+                        let inputs= document.getElementById("s");
+                        let inputy= document.getElementById("y");
+                        let vr= parseInt(inputr.value);
+                    let vs= parseInt(inputs.value);
+                    
+                    let vy=vr*vs;
+                    alert (" multiplicação equivalente: " +vy);
+
+                     }
+                      function sub(){
+                        let inputr= document.getElementById("r");
+                        let inputs= document.getElementById("s");
+                        let inputy= document.getElementById("y");
+                        let vr= parseInt(inputr.value);
+                    let vs= parseInt(inputs.value);
+                    let vy=vr-vs;
+                    alert (" subitração equivalente: " +vy);
+                      }
+                       function div (){
+                        let inputr= document.getElementById("r");
+                        let inputs= document.getElementById("s");
+                        let inputy= document.getElementById("y");
+                        let vr= parseInt(inputr.value);
+                    let vs= parseInt(inputs.value);
+               
+                    let vy=vr/vs;
+                    alert (" divisão equivalente: " +vy);
+                       }
+                       </script> 
+                       
+                 </head>
+                  
+          
+    </html>
+                       
+                       
